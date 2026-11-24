@@ -1,0 +1,9 @@
+{
+  "name": "reaction-diffusion",
+  "upstream": "https://github.com/linusmossberg/reaction-diffusion",
+  "repository": "linusmossberg/reaction-diffusion",
+  "branch_at_snapshot": "master",
+  "commit": "f4a7ffbbae22648a67350dd8a10d96632ca8ed61",
+  "license_status": "MIT_root_license_retained",
+  "usage": "reference_only_not_compiled_or_bundled"
+}

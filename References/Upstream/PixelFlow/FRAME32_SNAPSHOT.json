@@ -1,0 +1,9 @@
+{
+  "name": "PixelFlow",
+  "upstream": "https://github.com/diwi/PixelFlow",
+  "repository": "diwi/PixelFlow",
+  "branch_at_snapshot": "master",
+  "commit": "3db49397164bc76373ff7e15c0a31dadb0037801",
+  "license_status": "MIT_root_license_retained",
+  "usage": "reference_only_not_compiled_or_bundled"
+}

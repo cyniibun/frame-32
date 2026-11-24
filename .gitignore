@@ -1,0 +1,15 @@
+.build/
+build/
+.DS_Store
+__pycache__/
+.swiftpm/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+.aws/
+.codex/
+References/Upstream/v002-Rutt-Etra/
+References/Upstream/GPU-Based-Image-Processing-Tools/

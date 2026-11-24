@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "updated": "2026-11-17",
+  "effects": [
+    {
+      "id": "raster.relief",
+      "title": "RASTER//RELIEF",
+      "status": "source_baseline_native_gpu_acceptance_pending",
+      "priority": 1,
+      "references": [
+        "v002-Rutt-Etra"
+      ],
+      "estimated_cost": "Medium",
+      "build": "0.6.0"
+    },
+    {
+      "id": "contour.flow",
+      "title": "CONTOUR//FLOW",
+      "status": "source_baseline_native_gpu_acceptance_pending",
+      "priority": 2,
+      "references": [
+        "GPU-Based-Image-Processing-Tools"
+      ],
+      "estimated_cost": "Medium",
+      "build": "0.6.0"
+    },
+    {
+      "id": "vector.hatch",
+      "title": "VECTOR//HATCH",
+      "status": "source_baseline_native_gpu_acceptance_pending",
+      "priority": 3,
+      "references": [
+        "GPU-Based-Image-Processing-Tools",
+        "PixelFlow"
+      ],
+      "estimated_cost": "Medium",
+      "build": "0.6.0"
+    },
+    {
+      "id": "particle.skin",
+      "title": "PARTICLE//SKIN",
+      "status": "source_baseline_native_gpu_acceptance_pending",
+      "priority": 4,
+      "references": [
+        "PixelFlow"
+      ],
+      "estimated_cost": "Medium\u2013High",
+      "build": "0.6.0"
+    },
+    {
+      "id": "fluid.ghost",
+      "title": "FLUID//GHOST",
+      "status": "source_baseline_native_gpu_acceptance_pending",
+      "priority": 5,
+      "references": [
+        "PixelFlow"
+      ],
+      "estimated_cost": "Medium\u2013High",
+      "build": "0.6.0"
+    },
+    {
+      "id": "ink.growth",
+      "title": "INK//GROWTH",
+      "status": "source_baseline_native_gpu_acceptance_pending",
+      "priority": 6,
+      "references": [
+        "reaction-diffusion"
+      ],
+      "estimated_cost": "Medium\u2013High",
+      "build": "0.6.0"
+    },
+    {
+      "id": "paint.flow",
+      "title": "PAINT//FLOW",
+      "status": "source_baseline_native_gpu_acceptance_pending",
+      "priority": 7,
+      "references": [
+        "Post-Processing",
+        "GPU-Based-Image-Processing-Tools"
+      ],
+      "estimated_cost": "High",
+      "build": "0.6.0"
+    },
+    {
+      "id": "cells.shatter",
+      "title": "CELLS//SHATTER",
+      "status": "source_baseline_native_gpu_acceptance_pending",
+      "priority": 8,
+      "references": [
+        "PixelFlow"
+      ],
+      "estimated_cost": "Medium\u2013High",
+      "build": "0.6.0"
+    },
+    {
+      "id": "echo.frame",
+      "title": "ECHO//FRAME",
+      "status": "source_baseline_native_gpu_acceptance_pending",
+      "workstream": "original_bank",
+      "build": "0.6.0"
+    },
+    {
+      "id": "block.error",
+      "title": "BLOCK//ERROR",
+      "status": "source_baseline_native_gpu_acceptance_pending",
+      "workstream": "original_bank",
+      "build": "0.6.0"
+    },
+    {
+      "id": "ascii.grid",
+      "title": "ASCII//GRID",
+      "status": "source_baseline_native_gpu_acceptance_pending",
+      "workstream": "original_bank",
+      "build": "0.6.0"
+    },
+    {
+      "id": "pixel.sort",
+      "title": "PIXEL//SORT",
+      "status": "source_baseline_native_gpu_acceptance_pending",
+      "workstream": "original_bank",
+      "build": "0.6.0"
+    },
+    {
+      "id": "motion.slit",
+      "title": "MOTION//SLIT",
+      "status": "source_baseline_native_gpu_acceptance_pending",
+      "workstream": "original_bank",
+      "build": "0.6.0"
+    },
+    {
+      "id": "mosh.flow",
+      "title": "MOSH//FLOW",
+      "status": "source_baseline_native_gpu_acceptance_pending",
+      "workstream": "original_bank",
+      "build": "0.6.0"
+    },
+    {
+      "id": "dataveil",
+      "title": "DATAVEIL",
+      "status": "source_baseline_native_gpu_acceptance_pending",
+      "workstream": "original_bank",
+      "build": "0.6.0"
+    }
+  ],
+  "validation": {
+    "swift_build": "passed",
+    "settings_and_named_presets": "passed",
+    "native_gpu": "not_run_for_0.6.0",
+    "visual_acceptance": "pending",
+    "performance": "unmeasured"
+  }
+}

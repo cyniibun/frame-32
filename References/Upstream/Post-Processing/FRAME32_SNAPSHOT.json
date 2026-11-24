@@ -1,0 +1,9 @@
+{
+  "name": "Post-Processing",
+  "upstream": "https://github.com/GarrettGunnell/Post-Processing",
+  "repository": "GarrettGunnell/Post-Processing",
+  "branch_at_snapshot": "main",
+  "commit": "871a7ffcc44174f237b4c0127db51026c438d7a4",
+  "license_status": "MIT_root_license_retained",
+  "usage": "reference_only_not_compiled_or_bundled"
+}
