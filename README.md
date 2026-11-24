@@ -2,14 +2,31 @@
 
 Native Apple Silicon macOS 14+ facecam. Swift, AppKit, AVFoundation, Core Image and Metal. No third-party runtime or package dependencies.
 
-## Build
+## Quick start from a fresh checkout
+
+Run these steps on an Apple Silicon Mac with macOS 14 or later, in a signed-in desktop session. A terminal agent such as Claude Code can clone and build the app. A person at the Mac needs to approve camera access and confirm the live preview. Linux, Windows, and Intel Macs cannot run this build.
+
+Install Apple’s Command Line Tools with `xcode-select --install` if needed. Finish the installer before proceeding. Check that `xcode-select -p`, `git --version`, `swiftc --version`, and `python3 --version` work. The full Xcode app is optional. The build needs no external Swift packages, API keys, or environment configuration.
+
+From a folder where you can write, clone, build, and open FRAME//32. If you already have the checkout, run the last two commands from its root.
 
 ```sh
+git clone https://github.com/cyniibun/frame-32.git
+cd frame-32
 ./scripts/build.sh
 open build/FRAME32.app
 ```
 
-The installed Command Line Tools are sufficient. Build caches stay in `.build`. A compiler-local filesystem overlay hides a duplicate legacy SwiftBridging module map on this Mac; system files are unchanged.
+The build script creates and ad hoc signs the macOS app bundle with its camera permission metadata. Use it for launch instructions. Build caches go in `.build/` and the app goes in `build/`. After the first build, you can also double-click `launchframe32.command` in Finder.
+
+On first launch, allow camera access when macOS prompts. Confirm that the live preview appears and selecting an effect changes the image. Use the View menu to select a camera. If you denied access, enable FRAME32 under **System Settings → Privacy & Security → Camera**, then quit and reopen the app.
+
+### Check the build and diagnose problems
+
+- Run `./scripts/checks.sh` from the repository root to rebuild and run the parameter and GPU checks. Run **View → Run GPU Effect Checks** in the app if the terminal cannot access Metal. Exit code 2 from the script means GPU verification was unavailable and no matching native pass was found.
+- The current build has a known GPU regression check failure in VECTOR//HATCH. Increasing stroke scale is expected to enlarge the pattern, but the assertion fails. This is separate from building and launching the app.
+- Check `~/Library/Application Support/FRAME32/verification-report.txt` for native test results and `~/Library/Application Support/FRAME32/gpu-error-report.txt` for GPU errors. If a command fails, capture its output and the first error before changing the project.
+- The research snapshots in `References/` are optional for building, launching, and running the app checks.
 
 ## Interface and effects
 
